@@ -10,7 +10,7 @@ RUN go build -mod=vendor -ldflags "-X github.com/torusresearch/torus-node/versio
 
 
 # final image
-FROM alpine:3.9
+FROM alpine:3.23.2
 RUN apk update && apk add ca-certificates --no-cache
 
 RUN mkdir -p /torus
